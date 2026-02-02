@@ -1,0 +1,11 @@
+# Ignorar configurações do PyCharm/IntelliJ
+.idea/
+*.iml
+
+# Ignorar ambiente virtual e compilados
+venv/
+__pycache__/
+*.pyc
+
+# Ignorar variáveis de ambiente (senhas)
+.env
