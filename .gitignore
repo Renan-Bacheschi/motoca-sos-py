@@ -9,3 +9,5 @@ __pycache__/
 
 # Ignorar variáveis de ambiente (senhas)
 .env
+
+#pesquisar mais sobre segurança em python
