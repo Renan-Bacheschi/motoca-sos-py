@@ -1,11 +1,18 @@
+from sqlalchemy import table
 from sqlmodel import SQLModel, Field
 from typing import Optional
 
 
-class Moto(SQLModel, table=True):
-    id: Optional[int] = Field(default=None, primary_key=True)
+class MotoBase(SQLModel):
     marca: str
     modelo: str
     ano_modelo: str
 
-    usuario_id:  int = Field(foreign_key="usuario_id")
+class MotoCreate(MotoBase):
+    usuario_id: int
+
+class Moto(MotoBase, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+
+    usuario_id: Optional[int] = Field(default=None, foreign_key="usuario.id")
+

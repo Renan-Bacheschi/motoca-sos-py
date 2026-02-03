@@ -4,7 +4,7 @@ from dotenv import load_dotenv # cofre libs
 from app.schemas.usuario import Usuario
 from app.schemas.usuario import UsuarioCreate
 from app.schemas.usuario import UsuarioBase
-from app.schemas.moto import Moto
+from app.schemas.moto import MotoBase, MotoCreate, Moto
 
 # Carrega as variáveis do arquivo .env
 load_dotenv()
