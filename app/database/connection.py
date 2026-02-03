@@ -2,6 +2,8 @@ import os
 from sqlmodel import create_engine, Session, SQLModel
 from dotenv import load_dotenv # cofre libs
 from app.schemas.usuario import Usuario
+from app.schemas.usuario import UsuarioCreate
+from app.schemas.usuario import UsuarioBase
 from app.schemas.moto import Moto
 
 # Carrega as variáveis do arquivo .env
