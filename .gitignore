@@ -11,3 +11,5 @@ __pycache__/
 .env
 
 #pesquisar mais sobre segurança em python
+
+erros.log
