@@ -7,7 +7,7 @@ venv/
 __pycache__/
 *.pyc
 
-# Ignorar variáveis de ambiente (senhas)
+# Variáveis de ambiente
 .env
 
 #pesquisar mais sobre segurança em python
