@@ -15,7 +15,7 @@ async def log_errors_middleware(request: Request, call_next):
     try:
         return  await call_next(request)
     except Exception as e:
-        # arquivo log para aonde os erros serao inseridos caso exista
+
         logger.exception(f"Erro Crítico na rota: {request.url.path}")
 
         return JSONResponse(
